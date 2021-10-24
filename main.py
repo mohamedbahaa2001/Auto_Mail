@@ -27,16 +27,16 @@ def say(text):
 def send_email(receiver, subject, message):
     server = smtplib.SMTP('smtp.gmail.com',587)
     server.starttls()
-    server.login('mohamedbahaa1970@gmail.com','nnkfztzfrxldujek')
+    server.login('','')
     email = EmailMessage()
-    email['from'] = 'mohamedbahaa1970@gmail.com'
+    email['from'] = ''
     email['to'] = receiver
     email['subject'] = subject
     email.set_content(message)
     server.send_message(email)
 
 
-contacts = {'me': 'mohamedbahaa22.22@gmail.com'}
+contacts = {'': ''}
 
 
 def get_email_info():
